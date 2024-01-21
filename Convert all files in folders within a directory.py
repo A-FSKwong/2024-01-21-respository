@@ -6,8 +6,8 @@ subprocess.check_call(["pip", "install", "opencc-python-reimplemented"])
 
 cc = OpenCC('s2t')  # convert from Simplified Chinese to Traditional Chinese
 
-input_dir = 'C:/史传部S'
-output_dir = 'C:/史傳部T'
+input_dir = 'C:/Simplified'
+output_dir = 'C:/Traditional'
 
 # Create the output directory if it doesn't exist
 os.makedirs(output_dir, exist_ok=True)
