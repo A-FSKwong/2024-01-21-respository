@@ -1,9 +1,18 @@
-# 2024-01-21-respository
-# Hello World ! Kwong here .
-# I have studied a Java short course 20 years ago but now already forgotten everything.
-#This year 2024 , I study Buddhism, hoping the latest Ai tech could help my research 
-#in those holy sutras.
-2024-01-21-儲存庫
+Based on the following two projects:
 
-# 20年前我學過Java短期課程，但現在已經忘記了一切。
-#今年2024年，我學習佛教，希望最新的人工智慧技術可以幫助我研究經文
+OpenCC-master
+opencc-python-master
+
+I created this project for Chinese (Simplified/Traditional) interchange 中文（簡體繁體）互換. 
+It applies to an entire directory that contains folders, each with numerous files, All converted in one click.
+I am very grateful to the developers of the above two projects
+
+根據以下兩個項目：
+
+OpenCC-master
+opencc-python-master
+
+我創建了這個項目，用於中文（簡體/繁體）互換。
+它適用於包含許多file 的 folder 的 directory。全部一鍵轉換
+
+我非常感謝上述兩個項目的開發者。
