@@ -1,4 +1,4 @@
-!pip install opencc-python-reimplemented
+pip install opencc-python-reimplemented
 
 import os
 from opencc import OpenCC
@@ -23,4 +23,4 @@ for dirpath, dirnames, filenames in os.walk(input_dir):
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         
         # Run the opencc command on the file
-        !python -m opencc -c s2t -i "{input_file}" -o "{output_file}"
+        python -m opencc -c s2t -i "{input_file}" -o "{output_file}"
