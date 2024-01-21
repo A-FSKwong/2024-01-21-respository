@@ -1,7 +1,7 @@
 Based on the following two projects:
 
-OpenCC-master
-opencc-python-master
+1. OpenCC-master
+2. opencc-python-master
 
 I created this project for Chinese (Simplified/Traditional) interchange 中文（簡體繁體）互換. 
 It applies to an entire directory that contains folders, each with numerous files, All converted in one click.
@@ -12,8 +12,8 @@ As a matter of fact , all the codes was written by ChatGPT, I only give him the 
 
 根據以下兩個項目：
 
-OpenCC-master
-opencc-python-master
+1. OpenCC-master
+2. opencc-python-master
 
 我創建了這個項目，用於中文（簡體/繁體）互換 。它適用於包含許多 files 的 folders 的整個 Directory，全部一鍵轉換。
 我 (非 常 感 謝) 上述兩個項目的開發者。只需在CMD中運行 “Convert all files in folders within a directory.py”，
