@@ -1,24 +1,23 @@
 import subprocess
 import os
+import sys
+
+# Install the opencc module
+subprocess.check_call([sys.executable, "-m", "pip", "install", "opencc-python-reimplemented"])
+
 from opencc import OpenCC
 
-subprocess.check_call(["pip", "install", "opencc-python-reimplemented"])
-
 cc = OpenCC('s2t')  # convert from Simplified Chinese to Traditional Chinese
-
 
 # Ask for the input and output directories
 input_dir = input("Please enter the path of the input (Simplified) directory: ")
 output_dir = input("Please enter the path of the output (Traditional) directory: ")
 
-
 # Create the output directory if it doesn't exist
 os.makedirs(output_dir, exist_ok=True)
 
-
 # Initialize a counter for the number of files converted
 num_files_converted = 0
-
 
 # Walk through all files in the input directory, including subdirectories
 for dirpath, dirnames, filenames in os.walk(input_dir):
@@ -32,14 +31,13 @@ for dirpath, dirnames, filenames in os.walk(input_dir):
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         
         # Run the opencc command on the file
-        subprocess.check_call(["python", "-m", "opencc", "-c", "s2t", "-i", input_file, "-o", output_file])
+        subprocess.check_call([sys.executable, "-m", "opencc", "-c", "s2t", "-i", input_file, "-o", output_file])
         
         # Increment the counter
         num_files_converted += 1
         
         # Print the number of files converted so far, updating the same line each time
         print(f"\rTotal files converted: {num_files_converted}", end="")
-
 
 print("\nAll Done.")
 
