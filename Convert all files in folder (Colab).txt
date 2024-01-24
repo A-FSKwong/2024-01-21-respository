@@ -12,8 +12,8 @@ drive.mount('/content/drive')
 
 import os
 
-input_dir = '/content/drive/My Drive/史传部S'
-output_dir = '/content/drive/My Drive/史傳部T'
+input_dir = '/content/drive/My Drive/Simplified'
+output_dir = '/content/drive/My Drive/Traditional'
 
 # Get a list of all files in the input directory
 files = os.listdir(input_dir)

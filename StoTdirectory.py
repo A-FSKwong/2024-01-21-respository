@@ -4,11 +4,12 @@ from opencc import OpenCC
 
 subprocess.check_call(["pip", "install", "opencc-python-reimplemented"])
 
-
 cc = OpenCC('s2t')  # convert from Simplified Chinese to Traditional Chinese
 
-input_dir = 'C:/Simplified'
-output_dir = 'C:/Traditional'
+
+# Ask for the input and output directories
+input_dir = input("Please enter the path of the input (Simplified) directory: ")
+output_dir = input("Please enter the path of the output (Traditional) directory: ")
 
 
 # Create the output directory if it doesn't exist
@@ -20,9 +21,7 @@ num_files_converted = 0
 
 
 # Walk through all files in the input directory, including subdirectories
-
 for dirpath, dirnames, filenames in os.walk(input_dir):
-
     for filename in filenames:
         input_file = os.path.join(dirpath, filename)
         
@@ -43,6 +42,7 @@ for dirpath, dirnames, filenames in os.walk(input_dir):
 
 
 print("\nAll Done.")
+
 
 """
 ### Conversions 轉換
